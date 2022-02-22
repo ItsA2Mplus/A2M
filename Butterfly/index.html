@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+        <title>Butterfly</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="logo">Butterfly</div>
+            <img src="img/bg.jpg" alt="img" class="bg">
+            <div class="content">
+                <h2>Let's Make<br>Something Creative</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, corporis doloremque! Sint maiores obcaecati odio deleniti possimus accusanti velit praesentium enim cumque recusandae corporis numquam, alias doloribus porro fugit omnis!</p>
+                <a href="#">Get Started</a>
+            </div>
+            <p class="copyrightText">Ⓒ2021. A2M</p>
+        </section>
+        <div class="menuToggle" onclick="ToggleMenu();"></div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="socialBar">
+                <ul>
+                    <li><a href="#"><img src="img/facebook.png"></a></li>
+                    <li><a href="#"><img src="img/instagram.png"></a></li>
+                    <li><a href="#"><img src="img/twitter.png"></a></li>
+                </ul>
+                <a href="mailto:Ahmed.a.abdelmagide@gmail.com" class="emailBx"><img src="img/email.png" alt="img"></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        function ToggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        </script>
+    </body>
+</html>
